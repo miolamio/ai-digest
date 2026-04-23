@@ -2,7 +2,7 @@
 title: 'OpenAI расширила Codex за пределы написания кода'
 description: 'Codex теперь понимает системы, собирает контекст, рецензирует код, чинит баги и ведёт долгие задачи. Пользуются 3 млн разработчиков в неделю.'
 pubDate: 2026-04-23
-cover: 'https://replicate.delivery/xezq/OKWGnXmgn2KYBp9U5KL8VMW0Le0IlOEKPeBRIPhEBYVQi9dWA/out-0.webp'
+cover: 'https://replicate.delivery/xezq/uFewOTg5I23MYqoZ2DOpK1W2gc0VteqwZAGLEF7DJcZj8e7sA/out-0.webp'
 source: 'https://openai.com/index/codex-for-almost-everything/'
 tags: ['ai', 'tools', 'openai']
 ---

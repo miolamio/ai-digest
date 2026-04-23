@@ -2,7 +2,7 @@
 title: 'Cambridge сделала нейроморфный чип для AI'
 description: 'Устройство на гафниевом оксиде имитирует нейроны и обещает снизить энергопотребление AI-вычислений до 70%.'
 pubDate: 2026-04-23
-cover: 'https://replicate.delivery/xezq/33dXuhI4XkItHxPuriWAOlXP5bYSdPM9xTXVQM16h7jkYfOLA/out-0.webp'
+cover: 'https://replicate.delivery/xezq/Ax6913mh0C5CKJoKGHGOas2OrM1JDtzbCcJprprEfdrQee7sA/out-0.webp'
 source: 'https://www.sciencedaily.com/releases/2026/04/260422044633.htm'
 tags: ['ai', 'ml', 'hardware', 'research']
 ---
