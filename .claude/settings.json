@@ -1,12 +1,16 @@
 {
+  "permissions": {
+    "deny": [
+      "Read(**/.env*)",
+      "Read(**/credentials*)",
+      "Read(**/*secret*)"
+    ]
+  },
   "mcpServers": {
     "tavily": {
       "type": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "tavily-mcp@latest"
-      ],
+      "args": ["-y", "tavily-mcp@latest"],
       "env": {
         "TAVILY_API_KEY": "${TAVILY_API_KEY}"
       }
@@ -14,14 +18,44 @@
     "replicate": {
       "type": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "replicate-mcp@alpha",
-        "--tools=code"
-      ],
+      "args": ["-y", "replicate-mcp@alpha", "--tools=code"],
       "env": {
         "REPLICATE_API_TOKEN": "${REPLICATE_API_TOKEN}"
       }
     }
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/block-main-push.sh"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/pipeline-log.sh"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .claude/hooks/validate-article.js"
+          }
+        ]
+      }
+    ]
   }
 }
