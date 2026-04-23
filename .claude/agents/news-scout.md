@@ -1,7 +1,9 @@
 ---
 name: news-scout
 description: Ищет свежие AI-новости через Tavily, фильтрует по редполитике, возвращает список из 3 подтверждённых тем с источниками.
-tools: mcp__tavily__tavily_search, Read
+tools:
+  - mcp__tavily__tavily_search
+  - Read
 ---
 
 <!-- astroblog capstone: agent, фаза 07. Копируется в .claude/agents/news-scout.md в проекте. -->

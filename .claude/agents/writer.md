@@ -1,7 +1,10 @@
 ---
 name: writer
 description: Пишет одну статью дайджеста по заданной теме и источнику, следуя редполитике. Создаёт файл в src/content/blog/.
-tools: Read, Write, WebFetch
+tools:
+  - Read
+  - Write
+  - WebFetch
 ---
 
 <!-- astroblog capstone: agent, фаза 07. Копируется в .claude/agents/writer.md в проекте. -->

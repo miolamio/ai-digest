@@ -1,7 +1,9 @@
 ---
 name: page-builder
 description: Проверяет готовые статьи на соответствие редполитике, коммитит в digest/auto, пушит. Последний шаг пайплайна.
-tools: Read, Bash
+tools:
+  - Read
+  - Bash
 ---
 
 <!-- astroblog capstone: agent, фаза 07. Копируется в .claude/agents/page-builder.md в проекте. -->

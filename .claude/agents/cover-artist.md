@@ -1,7 +1,10 @@
 ---
 name: cover-artist
 description: Генерирует обложку для готовой статьи через Replicate и вписывает URL в frontmatter. Работает параллельно с другими writer-задачами.
-tools: mcp__replicate__execute, Read, Edit
+tools:
+  - mcp__replicate__execute
+  - Read
+  - Edit
 ---
 
 <!-- astroblog capstone: agent, фаза 07. Копируется в .claude/agents/cover-artist.md в проекте. -->
