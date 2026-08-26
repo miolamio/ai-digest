@@ -61,8 +61,14 @@ tags: [ai, llm]
 
 `title`, `description`, `pubDate`, `cover`, `source` — все заполнены. Stop-хук (фаза 06) блокирует публикацию, если хоть одно поле пустое.
 
-## Git
+## Git Conventions
 
 - Ветка по умолчанию `main`.
 - С фазы 08 PreToolUse-хук блокирует прямой push в `main`. Автоматика коммитит в ветку `digest/auto`, слияние в `main` — вручную по желанию.
 - Запрещены `git push --force`, `git reset --hard`, `git commit --amend`.
+- Commits: Conventional Commits format.
+- Types: feat, fix, docs, refactor, test, chore.
+- Format: type(scope): description.
+- Max subject line: 72 characters.
+- Branch naming: type/short-description.
+- PRs: always target "main".
