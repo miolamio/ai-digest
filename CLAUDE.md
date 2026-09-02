@@ -114,3 +114,12 @@ tags: [ai, llm]
 - Ветка по умолчанию `main`.
 - PreToolUse-хук блокирует прямой push в `main`. Автоматика коммитит в ветку `digest/auto`, слияние в `main` — вручную по желанию.
 - Запрещены `git push --force`, `git reset --hard`, `git commit --amend`.
+
+## Git Conventions
+
+- Commits: Conventional Commits format.
+- Types: feat, fix, docs, refactor, test, chore.
+- Format: type(scope): description.
+- Max subject line: 72 characters.
+- Branch naming: type/short-description.
+- PRs: always target "main".
